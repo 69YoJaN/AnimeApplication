@@ -1,6 +1,6 @@
 
 package com.example.anime.model
 
-data class Waifu (
+data class AngryWaifu (
     val url: String
 )

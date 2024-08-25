@@ -16,7 +16,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "AUTH_TOKEN", "\"${System.getenv("AUTH_TOKEN")}\"")
+        buildConfigField("String", "AUTH_TOKEN", "\"Njk2MDI2OTA3NzUzNTc4NTE2.MTcyNDUxNDI0OQ--.7145e34be744\"")
     }
 
     buildTypes {
@@ -36,8 +36,8 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
-        viewBinding = true
         buildConfig = true
+        viewBinding = true
     }
 }
 
@@ -48,6 +48,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -68,4 +70,10 @@ dependencies {
 
     //navigation drawer
     implementation ("com.google.android.material:material:1.3.0-alpha03")
+
+
+    //splash screen
+    implementation("androidx.core:core-splashscreen:1.0.0")
+
+
 }

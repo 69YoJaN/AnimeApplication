@@ -1,11 +1,9 @@
 package com.example.anime.networking
 
-import com.example.anime.model.Waifu
-import okhttp3.Authenticator
+import com.example.anime.model.AngryWaifu
 import retrofit2.http.GET
-import retrofit2.http.Header
 
 interface ApiService {
     @GET("angry")
-    suspend fun getWaifu() : Waifu
+    suspend fun getAngryWaifu() : AngryWaifu
 }
